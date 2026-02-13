@@ -1,0 +1,195 @@
+body {
+      margin: 0;
+        overflow: hidden;
+          font-family: 'Poppins', sans-serif;
+            background: black;
+}
+
+/* Container */
+
+.container {
+      height: 100vh;
+        width: 100vw;
+          display: flex;
+            justify-content: center;
+              align-items: center;
+                flex-direction: column;
+                  text-align: center;
+                    transition: background 2s ease;
+                      color: white;
+                        position: relative;
+}
+
+.container.active {
+      background: radial-gradient(circle at top, #1f1f2e, #0d0d18);
+}
+
+/* Fade */
+
+.fade {
+      animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+}
+
+/* Titles */
+
+.title {
+      font-size: 3rem;
+        text-shadow: 0 0 20px #ff4d6d;
+}
+
+.success {
+      font-size: 2.3rem;
+        text-shadow: 0 0 20px #ff4d6d;
+}
+
+/* Buttons */
+
+.button-group {
+      margin-top: 30px;
+}
+
+.yes-btn {
+      padding: 15px 40px;
+        font-size: 20px;
+          border-radius: 40px;
+            border: none;
+              background: linear-gradient(45deg, #ff4d6d, #ff758f);
+                color: white;
+                  cursor: pointer;
+                    box-shadow: 0 0 20px #ff4d6d;
+                      transition: 0.3s;
+                        margin-right: 20px;
+}
+
+.yes-btn:hover {
+      transform: scale(1.1);
+}
+
+.no-btn {
+      position: absolute;
+        padding: 12px 30px;
+          font-size: 18px;
+            border-radius: 40px;
+              border: none;
+                background: #444;
+                  color: white;
+                    cursor: pointer;
+                      transition: 0.2s;
+}
+
+/* Message */
+
+.message-box {
+      max-width: 600px;
+        padding: 20px;
+}
+
+.typing {
+      margin-top: 20px;
+        font-size: 18px;
+          line-height: 1.7;
+            min-height: 120px;
+}
+
+.cursor {
+      animation: blink 1s infinite;
+}
+
+@keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+        25%, 75% { opacity: 0; }
+}
+
+/* Secret */
+
+.secret-btn {
+      margin-top: 20px;
+        padding: 12px 30px;
+          border-radius: 30px;
+            border: none;
+              background: white;
+                color: black;
+                  cursor: pointer;
+                    transition: 0.3s;
+}
+
+.secret-btn:hover {
+      transform: scale(1.1);
+}
+
+/* Flowers */
+
+.flowers {
+      margin-top: 25px;
+        font-size: 28px;
+          animation: bloom 1s ease forwards;
+}
+
+@keyframes bloom {
+      from { transform: scale(0); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+}
+
+/* Hearts */
+
+.heart {
+      position: fixed;
+        top: -20px;
+          animation: fall 6s linear;
+            z-index: 1;
+}
+
+@keyframes fall {
+      to { transform: translateY(100vh); opacity: 0; }
+}
+
+/* Footer */
+
+.footer {
+      position: absolute;
+        bottom: 15px;
+          font-size: 14px;
+            animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+      from { text-shadow: 0 0 5px #fff; }
+        to { text-shadow: 0 0 20px #ff4d6d; }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+      .title { font-size: 2rem; }
+        .success { font-size: 1.8rem; }
+          .yes-btn { font-size: 16px; padding: 12px 25px; }
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
